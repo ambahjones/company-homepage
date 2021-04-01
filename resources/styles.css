@@ -1,0 +1,133 @@
+html {
+  font-size: 10px;
+  max-width: 100%;
+  height: 1400px;
+}
+
+body {
+  background-color: #dbd9d9;
+  margin: 0;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template: 100px repeat(3, 400px) 100px / repeat(6, 1fr);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 10rem;
+  width: 100%;
+  background-color: #fcf9f9;
+}
+
+h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3.8rem;
+  padding-left: 20px;
+}
+
+#nav-links {
+  height: 10rem;
+}
+
+nav {
+  text-align: right;
+  display: block;
+  flex-grow: 2;
+  height: 10rem;
+}
+
+nav span {
+  display: inline-block;
+  padding: 3.5rem 2rem 0rem 2rem;
+  height: 3rem;
+}
+
+a {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  height: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 10rem;
+  width: 100%;
+}
+
+#slogan {
+  width: 85%;
+  height: 25rem;
+  margin: 0 auto;
+  background-image: url(../resources/images/drew-coffman-D1Pa78SnrH0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  font-family: "Yellowtail", cursive;
+}
+
+#slogan h3 {
+  font-size: 6.2rem;
+  margin: 10rem 0rem 0rem 5rem;
+  padding-top: 2.5rem;
+  padding-left: 1rem;
+}
+
+#slogan h2 {
+  color: #fcf9f9;
+  font-size: 7.6rem;
+  margin: 0rem 0rem 10rem 90rem;
+}
+
+#statement {
+  width: 75%;
+  margin: 0 auto;
+  height: 15rem;
+  font-size: 2rem;
+}
+
+#recommendations {
+  text-align: center;
+  height: 40rem;
+  background-color: black;
+  color: #fcf9f9;
+}
+
+#recommendations h2 {
+  font-size: 6.2rem;
+  padding-top: 1rem;
+}
+
+#books-container {
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.bookCard img {
+  width: 10rem;
+  height: auto;
+}
+
+#staff {
+  height: 40rem;
+}
+
+footer {
+  height: 10rem;
+  background-color: #fcf9f9;
+}
