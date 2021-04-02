@@ -176,4 +176,28 @@ main {
 footer {
   height: 10rem;
   background-color: #fcf9f9;
+  margin-top: 2rem;
+}
+
+footer span {
+  height: 3rem;
+  padding: 2rem 4rem;
+  margin-top: 2rem;
+}
+
+footer h6 {
+  font-size: 1.8rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+footer #address {
+  font-size: 1.8rem;
+}
+
+footer #credits {
+  text-align: right;
+  flex-grow: 2;
+  font-size: 1.2rem;
+  margin-top: 2.5rem;
 }
