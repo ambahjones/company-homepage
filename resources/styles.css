@@ -152,6 +152,10 @@ main {
   width: 20%;
 }
 
+.staffCard a img {
+  width: 9rem;
+}
+
 .frame {
   height: 24rem;
   overflow: hidden;
@@ -161,8 +165,12 @@ main {
   width: 20rem;
 }
 
+.staffCard h4 {
+  font-size: 1.8rem;
+}
+
 .staffCard h6 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 footer {
