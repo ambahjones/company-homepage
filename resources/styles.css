@@ -1,7 +1,7 @@
 html {
   font-size: 10px;
   max-width: 100%;
-  height: 1400px;
+  height: 2000px;
 }
 
 body {
@@ -70,9 +70,13 @@ main {
   width: 100%;
 }
 
+#about {
+  height: 50rem;
+}
+
 #slogan {
   width: 85%;
-  height: 25rem;
+  height: 30rem;
   margin: 0 auto;
   background-image: url(../resources/images/drew-coffman-D1Pa78SnrH0-unsplash.jpg);
   background-position: center;
@@ -89,33 +93,35 @@ main {
 
 #slogan h2 {
   color: #fcf9f9;
-  font-size: 7.6rem;
-  margin: 0rem 0rem 10rem 90rem;
+  font-size: 8.4rem;
+  margin: 0rem 0rem 9rem 90rem;
 }
 
 #statement {
   width: 75%;
   margin: 0 auto;
+  padding-top: 3rem;
   height: 15rem;
   font-size: 2rem;
 }
 
 #recommendations {
   text-align: center;
-  height: 40rem;
+  height: 60rem;
   background-color: black;
   color: #fcf9f9;
 }
 
 #recommendations h2 {
   font-size: 6.2rem;
-  padding-top: 1rem;
+  padding-top: 5rem;
 }
 
 #books-container {
   width: 85%;
   margin: 0 auto;
   justify-content: space-around;
+  padding-top: 4rem;
 }
 
 .bookCard img {
@@ -123,8 +129,40 @@ main {
   height: auto;
 }
 
+.bookCard h4 {
+  font-size: 1.6rem;
+}
+
 #staff {
-  height: 40rem;
+  text-align: center;
+  height: 70rem;
+}
+
+#staff h2 {
+  font-size: 6.2rem;
+  margin-top: 3rem;
+}
+
+#staff-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.staffCard {
+  width: 20%;
+}
+
+.frame {
+  height: 24rem;
+  overflow: hidden;
+}
+
+.staffCard img {
+  width: 20rem;
+}
+
+.staffCard h6 {
+  font-size: 1.6rem;
 }
 
 footer {
