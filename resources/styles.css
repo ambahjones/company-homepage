@@ -27,12 +27,6 @@ header {
   background-color: #fcf9f9;
 }
 
-@media only screen and (max-width: 480px) {
-  header {
-    position: static;
-  }
-}
-
 h1 {
   font-family: "Cinzel", serif;
   font-size: 3.8rem;
@@ -41,7 +35,8 @@ h1 {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    padding-top: 2rem;
   }
 }
 
@@ -57,8 +52,19 @@ nav {
 }
 
 @media only screen and (max-width: 480px) {
-  nav {
+  nav,
+  #nav-links {
+    height: 2rem;
+  }
+  nav .lgScreen {
     display: none;
+  }
+
+  nav #mobile-nav {
+    display: inline-block;
+    height: 3rem;
+    padding: 0rem 1rem 0rem 0rem;
+    margin-top: 6rem;
   }
 }
 
@@ -77,6 +83,10 @@ a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+#mobile-nav {
+  display: none;
 }
 
 main {
@@ -111,12 +121,39 @@ main {
   margin: 0rem 0rem 9rem 90rem;
 }
 
+@media only screen and (max-width: 480px) {
+  #slogan {
+    width: 100%;
+  }
+
+  #slogan h3 {
+    font-size: 4rem;
+    margin: 0rem 0rem 0rem 2rem;
+  }
+
+  #slogan h2 {
+    font-size: 5.2rem;
+    margin: 10rem 0rem 2rem 25rem;
+  }
+}
+
 #statement {
   width: 75%;
   margin: 0 auto;
-  padding-top: 3rem;
+  padding: 1.5rem 0rem 1rem 0rem;
   height: 15rem;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #statement {
+    height: auto;
+    font-size: 1.4rem;
+    padding: 1.2rem 0rem 1rem 0rem;
+  }
+  #statement p {
+    height: auto;
+  }
 }
 
 #recommendations {
@@ -129,6 +166,17 @@ main {
 #recommendations h2 {
   font-size: 6.2rem;
   padding-top: 5rem;
+  margin-top: 0rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #recommendations {
+    height: auto;
+  }
+
+  #recommendations h2 {
+    font-size: 3.4rem;
+  }
 }
 
 #books-container {
@@ -147,6 +195,13 @@ main {
   font-size: 1.6rem;
 }
 
+@media only screen and (max-width: 480px) {
+  .bookCard {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+}
+
 #staff {
   text-align: center;
   height: 70rem;
@@ -154,7 +209,17 @@ main {
 
 #staff h2 {
   font-size: 6.2rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  #staff {
+    height: auto;
+  }
+
+  #staff h2 {
+    font-size: 4rem;
+  }
 }
 
 #staff-container {
@@ -164,6 +229,13 @@ main {
 
 .staffCard {
   width: 20%;
+}
+
+@media only screen and (max-width: 480px) {
+  .staffCard {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
 }
 
 .staffCard a img {
@@ -214,4 +286,26 @@ footer #credits {
   flex-grow: 2;
   font-size: 1.2rem;
   margin-top: 2.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    height: auto;
+    text-align: center;
+  }
+
+  footer h6 {
+    width: 100%;
+    margin: 0rem;
+    font-size: 2.4rem;
+  }
+  footer span {
+    height: 2rem;
+    margin: 0rem;
+  }
+  footer #credits {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0rem;
+  }
 }
