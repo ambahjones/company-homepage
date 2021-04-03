@@ -104,6 +104,12 @@ main {
   height: 50rem;
 }
 
+@media only screen and (max-width: 480px) P {
+  #about {
+    height: auto;
+  }
+}
+
 #slogan {
   width: 85%;
   height: 30rem;
@@ -116,30 +122,36 @@ main {
 
 #slogan h3 {
   font-size: 6.2rem;
-  margin: 10rem 0rem 0rem 5rem;
-  padding-top: 2.5rem;
-  padding-left: 1rem;
+  margin: 0;
+  padding-top: /*2.5rem*/ 2%;
+  padding-left: /*5rem*/ 4.1%;
+  padding: 2% 0 5% 4.1%;
 }
 
 #slogan h2 {
   color: #fcf9f9;
   font-size: 8.4rem;
-  margin: 0rem 0rem 9rem 90rem;
+  margin: 0;
+  /*margin: 0rem 0rem 0rem 90rem;*/
+  padding-left: 70%;
 }
 
 @media only screen and (max-width: 480px) {
   #slogan {
     width: 100%;
+    height: auto;
   }
 
   #slogan h3 {
     font-size: 4rem;
-    margin: 0rem 0rem 0rem 2rem;
+    /*margin: 0rem 0rem 0rem 2rem;*/
   }
 
   #slogan h2 {
     font-size: 5.2rem;
-    margin: 10rem 0rem 2rem 25rem;
+    margin: 0;
+    /*margin: 10rem 0rem 2rem 25rem;*/
+    padding: 25% 0 5% 60%;
   }
 }
 
