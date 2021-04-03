@@ -63,8 +63,14 @@ nav {
   nav #mobile-nav {
     display: inline-block;
     height: 3rem;
-    padding: 0rem 1rem 0rem 0rem;
+    padding: 1.2rem 1rem 0rem 0rem;
     margin-top: 6rem;
+  }
+
+  nav #mobile-nav a {
+    height: 3rem;
+    padding: 0rem;
+    font-size: 1rem;
   }
 }
 
