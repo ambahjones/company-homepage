@@ -30,7 +30,14 @@ header {
 h1 {
   font-family: "Cinzel", serif;
   font-size: 3.8rem;
-  padding-left: 20px;
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -51,11 +58,14 @@ nav {
   height: 10rem;
 }
 
-@media only screen and (max-width: 480px) {
-  nav,
-  #nav-links {
-    height: 2rem;
+@media only screen and (max-width: 768px) {
+  nav .lgScreen {
+    height: 3rem;
+    padding: 5.5rem 1rem 0 0;
   }
+}
+
+@media only screen and (max-width: 480px) {
   nav .lgScreen {
     display: none;
   }
@@ -111,7 +121,13 @@ main {
   height: 50rem;
 }
 
-@media only screen and (max-width: 480px) P {
+@media only screen and (max-width: 768px) {
+  #about {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
   #about {
     height: auto;
   }
@@ -143,6 +159,13 @@ main {
   padding-left: 70%;
 }
 
+@media only screen and (max-width: 768px) {
+  #slogan {
+    width: 100%;
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   #slogan {
     width: 100%;
@@ -170,6 +193,12 @@ main {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  #statement {
+    height: auto;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   #statement {
     height: auto;
@@ -192,6 +221,12 @@ main {
   font-size: 6.2rem;
   padding-top: 5rem;
   margin-top: 0rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #recommendations {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -226,6 +261,21 @@ main {
   font-size: 1.6rem;
 }
 
+@media only screen and (max-width: 768px) {
+  #books-container {
+    width: 80%;
+  }
+
+  .bookCard {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+
+  .bookCard img {
+    width: 20rem;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .bookCard {
     width: 100%;
@@ -241,6 +291,12 @@ main {
 #staff h2 {
   font-size: 6.2rem;
   margin-top: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #staff {
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -266,6 +322,13 @@ main {
 
 .staffCard {
   width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .staffCard {
+    width: 100%;
+    padding-bottom: 4rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -325,6 +388,28 @@ footer #credits {
   margin-top: 2.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  footer {
+    height: auto;
+    text-align: center;
+  }
+
+  footer h6 {
+    width: 100%;
+    margin: 0rem;
+    font-size: 2.4rem;
+  }
+
+  footer span {
+    margin-top: 0;
+  }
+
+  footer #credits {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   footer {
     height: auto;
@@ -336,10 +421,12 @@ footer #credits {
     margin: 0rem;
     font-size: 2.4rem;
   }
+
   footer span {
     height: 2rem;
     margin: 0rem;
   }
+
   footer #credits {
     flex-grow: 1;
     text-align: center;
