@@ -81,17 +81,48 @@ nav {
   height: 10rem;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 834px) {
+@media only screen and (min-width: 835px) and (max-width: 1200px) {
+  #nav-links {
+    height: 5rem;
+  }
+
   nav .lgScreen {
     height: 3rem;
     padding: 5rem 1rem 0 0;
   }
+
+  nav .lgScreen a {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 834px) {
+  #nav-links {
+    height: 5rem;
+  }
+
+  nav .lgScreen {
+    height: 3rem;
+    padding: 5rem 1rem 0 0;
+  }
+
+  nav .lgScreen a {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 668px) and (max-width: 768px) {
+  #nav-links {
+    height: 5rem;
+  }
+
   nav .lgScreen {
     height: 3rem;
     padding: 5.5rem 1rem 0 0;
+  }
+
+  nav .lgScreen a {
+    font-size: 1.5rem;
   }
 }
 
